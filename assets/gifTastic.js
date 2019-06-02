@@ -1,18 +1,15 @@
-
+$(document).ready(function(){
 var topics = ["Toyota Supra", "Nissan Skyline", "Honda NSX", "Lexus RCF", "Subaru STI"];
-console.log (topics)
+
 function renderButtons() {
 
 $("#carGarage").empty();
 
 for (var i = 0; i < topics.length; i++) {
-
     var gas = $("<button>");
-
     gas.addClass("vehicle");
     gas.attr("data-name", topics[i]);
     gas.text(topics[i]);
-
     $("#carGarage").append(gas);
     }
 }
@@ -26,6 +23,7 @@ renderButtons();
 });
 
 renderButtons();
+});
 
 
 
