@@ -8,25 +8,35 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>GifTastic</title>
 </head>
 
 <body>
 
    <div class="container">
-        <h1>Gifs of Sports Cars</h1>
+        <h1>Garage <mark id="marker">(GIFs)</mark> of Sports Cars</h1>
 
         <!-- Car Buttons will be dumped here -->
-        <div id="carGarage"></div>
+        <div id="carGarage" title="START YOUR ENGINE!"></div>
 
         <form id="carShow">
             <label for="car-input">Car Collection</label>
             <input type="text" id="car-input"></input><br>
-            <input id="add-car" type="submit" value="Car Collection"></input>
+            <input id="add-car" type="submit" title="VROOM" value="Car Collection"></input>
         </form>
     </div>
 
-<div id="gifs-appear-here"></div>
+    <div class="container">
+        <div class="row">
+            <div col= "col col-lg-3">
+                <div id="gifs-appear-here">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     
    <script src="./assets/gifTastic.js"></script>

@@ -1,0 +1,21 @@
+.container {
+    text-align: right;
+    
+}
+
+#marker {
+    background-color: yellow;
+}
+
+#carGarage {
+    text-align: left;
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  #carGarage :hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
